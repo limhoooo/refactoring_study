@@ -1,6 +1,6 @@
 # refactoring_study
 
-![XL](https://user-images.githubusercontent.com/24869943/123025490-a30ef400-d415-11eb-970b-eab778671c9f.jpg)
+![dsdsdsd](https://user-images.githubusercontent.com/24869943/123025593-c6d23a00-d415-11eb-9524-3ef87ecc892e.png)
 
 ```
 리팩터링 (개정판)
