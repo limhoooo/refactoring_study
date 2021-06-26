@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <script>
+        // 성의없는요소 3.14
+        // 리팩토링시 필요없는 요소들 정리를 위함
+
+        // 함수인라인하기 (6.2) 
+        let driverData = { number: 10 };
+        // 잘못된 케이스 
+        function getRaitng(driver) {
+            return moreDriver(driver) ? 2 : 1;
+        }
+        function moreDriver(driver) {
+            return driver.number > 5;
+        }
+        console.log(getRaitng(driverData));
+
+        // 함수인라인적용
+        function getRaitng(driver) {
+            return (driver.number > 5) ? 2 : 1;
+        }
+        console.log(getRaitng(driverData));
+        //
+        // 무분별한 함수쪼개기는 오히려 안좋을수 있다는점.
+
+        // 계층 합치기 (12.9)
+        class Employee { }
+        class Salesperson extends Employee {
+            //Salesperson 로직
+        }
+
+        class Employee {
+            //Salesperson 로직
+        }
+
+
+    </script>
+</body>
+
+</html>

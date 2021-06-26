@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <script>
+        //3.13 반복문
+        //필터 과 맵 연산으로 변경
+        //파이프라인으로 바꾸기(8.8)
+
+        let names = [];
+        let input = [
+            { name: 'ho', job: 'programmer' },
+            { name: 'minsu', job: 'backsu' },
+            { name: 'june', job: 'programmer' },
+        ]
+
+        // 안좋은 for문
+        for (i of input) {
+            if (i.job === 'programmer') {
+                names.push(i.name);
+            }
+        }
+
+        // filter 이용
+        names = input
+            .filter(i => i.job === "programmer") // input 안의 job key 의 값이 "programmer" 인것을 찾는다.
+            .map(i => i.name); // filter로 걸러진 값 프로퍼티의 name 값만 추려낸다.
+        console.log(names);
+
+    </script>
+</body>
+
+</html>
